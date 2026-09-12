@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 plc = ModbusTcpClient(host='127.0.0.1', port=502)
 
 # ── Conexión a InfluxDB 2.7 ───────────────────────────────────────────────────
-INFLUX_TOKEN = "uyUV3ZKkme8FPJDBKAKNIpIZEESdtrnKt7cwcdpSwtIEzlmKDvQ0kr2kLldlWx9RCZOW-tqbEvEwz-lvV4SxHA=="
+INFLUX_TOKEN = "TU_TOKEN_AQUI"
 INFLUX_ORG   = "plc_org"
 INFLUX_BUCKET = "plc_data"
 
