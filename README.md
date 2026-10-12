@@ -1,5 +1,4 @@
-[2_P8_seccion_Project_Evolution.md](https://github.com/user-attachments/files/33318473/2_P8_seccion_Project_Evolution.md)# Project 8 — InfluxDB Industrial PLC Dashboard
-
+[2_P8_seccion_Project_Evolution.md](https://github.com/user-attachments/files/33318473/2_P8_seccion_Project_Evolution.md)# Real-time PLC data pipeline from CODESYS to Grafana through Modbus TCP, Python and InfluxDB 2.7
 Real-time PLC data pipeline replacing SQLite with InfluxDB 2.7 for concurrent read/write support. Signals from a CODESYS SoftPLC are read via Modbus TCP, stored in InfluxDB, and visualized in Grafana.
 
 ---
@@ -92,6 +91,8 @@ Trial license expired. Factory I/O is not part of the data pipeline (CODESYS →
 
 ---
 
+## Project Evolution
+
 This repository is the third version of the same PLC data pipeline. Each version replaced the storage layer to fix a limitation found in the previous one.
 
 | Version | Repository | Storage | Why it changed |
@@ -101,4 +102,4 @@ This repository is the third version of the same PLC data pipeline. Each version
 | v3 | This repository | InfluxDB 2.7 + Grafana | Time-series database with concurrent read/write support |
 
 The next version adds analog signals (motor current and temperature), fault detection rules in Python and Grafana alerts.
-t_Evolution.md…]()
+
