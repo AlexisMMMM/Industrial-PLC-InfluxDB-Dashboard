@@ -1,4 +1,4 @@
-[2_P8_seccion_Project_Evolution.md](https://github.com/user-attachments/files/33318473/2_P8_seccion_Project_Evolution.md)# Real-time PLC data pipeline from CODESYS to Grafana through Modbus TCP, Python and InfluxDB 2.7
+(https://github.com/user-attachments/files/33318473/2_P8_seccion_Project_Evolution.md)# Real-time PLC data pipeline from CODESYS to Grafana through Modbus TCP, Python and InfluxDB 2.7
 Real-time PLC data pipeline replacing SQLite with InfluxDB 2.7 for concurrent read/write support. Signals from a CODESYS SoftPLC are read via Modbus TCP, stored in InfluxDB, and visualized in Grafana.
 
 ---
