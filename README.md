@@ -1,4 +1,4 @@
-# Project 8 — InfluxDB Industrial PLC Dashboard
+[2_P8_seccion_Project_Evolution.md](https://github.com/user-attachments/files/33318473/2_P8_seccion_Project_Evolution.md)# Project 8 — InfluxDB Industrial PLC Dashboard
 
 Real-time PLC data pipeline replacing SQLite with InfluxDB 2.7 for concurrent read/write support. Signals from a CODESYS SoftPLC are read via Modbus TCP, stored in InfluxDB, and visualized in Grafana.
 
@@ -92,12 +92,13 @@ Trial license expired. Factory I/O is not part of the data pipeline (CODESYS →
 
 ---
 
-## Roadmap Context
+This repository is the third version of the same PLC data pipeline. Each version replaced the storage layer to fix a limitation found in the previous one.
 
-- [x] Project 5 — Conveyor Belt Sensor Control (CODESYS + Modbus TCP + Factory I/O)
-- [x] Project 6 — PLC Python Modbus Monitor (CSV logger)
-- [x] Project 7 — Industrial PLC Dashboard (SQLite + Grafana)
-- [x] Project 8 — InfluxDB Migration (this project)
-- [ ] Project 9 — Industrial Data Quality Validation (SQL anomaly detection)
-- [ ] Project 10 — IT/OT Network Architecture Documentation
-- [ ] Project 11 — OPC UA (revisit license workaround)
+| Version | Repository | Storage | Why it changed |
+|---|---|---|---|
+| v1 | [PLC-Python-Modbus-Monitor](https://github.com/AlexisMMMM/PLC-Python-Modbus-Monitor) | CSV file | First Modbus TCP acquisition from the CODESYS SoftPLC |
+| v2 | [Industrial-PLC-Dashboard](https://github.com/AlexisMMMM/Industrial-PLC-Dashboard) | SQLite + Grafana | Added historical storage and a dashboard. SQLite file locking caused read/write conflicts with Grafana |
+| v3 | This repository | InfluxDB 2.7 + Grafana | Time-series database with concurrent read/write support |
+
+The next version adds analog signals (motor current and temperature), fault detection rules in Python and Grafana alerts.
+t_Evolution.md…]()
